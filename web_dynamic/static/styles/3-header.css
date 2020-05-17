@@ -1,11 +1,39 @@
 header {
+	display: flex;
     background: white;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
 }
+
 header .logo {
     background: url("../images/logo.png") no-repeat;
-    left: 20px;
+	margin-left: 20px;
+	width: 150px;
     height: 100%;
 }
+
+/* Class by ok Status */
+.available {
+	background-color: #ff545f;
+}
+
+/* Default of background*/
+.not-available {
+	background-color: #cccccc;
+}
+
+/* The others properties of status div 
+The background is not put here, because make conflict
+when change dynamical due selector #
+*/
+header #api_status {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 30px;
+	align-self: center;
+	margin-left: auto;
+}
+
+
